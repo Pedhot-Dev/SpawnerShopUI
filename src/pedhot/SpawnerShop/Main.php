@@ -166,6 +166,8 @@ class Main extends PluginBase implements Listener
                     break;
             }
         });
+        $economy = EconomyAPI::getInstance();
+        $myMoney = $economy->myMoney($sender);
         $form->setTitle("Spawner Shop");
         $form->setContent("Your Money ".number_format($myMoney)."\n\n\n\n\n");
         $form->addButton("Sheep\n".number_format($this->getConfig()->getNested("price.sheep")));
