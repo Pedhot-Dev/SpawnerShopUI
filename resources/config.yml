@@ -1,0 +1,21 @@
+# Config Spawner Shop UI by PedhotDev
+
+# Dont change this
+config-version: 1.0
+
+# PRICES
+price:
+  sheep: "100000"
+  cow: "100000"
+  pig: "100000"
+  chicken: "100000"
+  bee: "100000"
+  zombie: "100000"
+  skeleton: "100000"
+  spider: "100000"
+  enderman: "100000"
+
+# MESSAGE
+message:
+  success-buying: "Success Buy This Spawner"
+  not-enough-money: "Not enough money"

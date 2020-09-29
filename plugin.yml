@@ -1,0 +1,14 @@
+name: SpawnerShopUI
+api: 3.0.0
+version: 1.0
+author: Pedhott
+main: pedhot\SpawnerShop\Main
+
+depend:
+  - FormAPI
+  - BurgerSpawners
+  - EconomyAPI
+
+commands:
+  spawnershop:
+    description: "Open SpawnerShop"
