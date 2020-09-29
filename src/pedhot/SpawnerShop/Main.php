@@ -81,7 +81,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("sheep", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '1':
@@ -91,17 +91,17 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("cow", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '2':
                     $pig = $this->getConfig()->getNested("price.pig");
                     if ($myMoney >= $pig){
-                        $economy->reduceMoney($sender, $zombie);
+                        $economy->reduceMoney($sender, $pig);
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("pig", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '3':
@@ -111,7 +111,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("chicken", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '4':
@@ -121,7 +121,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("bee", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '5':
@@ -131,7 +131,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("zombie", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '6':
@@ -141,7 +141,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("skeleton", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '7':
@@ -151,7 +151,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("spider", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
                 case '8':
@@ -161,7 +161,7 @@ class Main extends PluginBase implements Listener
                         $sender->getInventory()->addItem(\Heisenburger69\BurgerSpawners\Main::getInstance()->getSpawner("enderman", "1"));
                         $sender->sendMessage($this->getConfig()->getNested("message.success-buying"));
                     }else{
-                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"););
+                        $sender->sendMessage($this->getConfig()->getNested("message.not-enough-money"));
                     }
                     break;
             }
